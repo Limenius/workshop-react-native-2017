@@ -11,11 +11,11 @@ import {
 import App from './app/App'
 
 export default class travolta extends Component {
-    render() {
-        return (
-            <App/>
-        )
-    }
+  render() {
+    return (
+      <App/>
+    )
+  }
 }
 
 AppRegistry.registerComponent('travolta', () => travolta)
