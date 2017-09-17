@@ -22,10 +22,18 @@ const ListItemActor = ({actorName, actorImage}) => (
 
 const Styles = StyleSheet.create({
   listItem: {
+    backgroundColor: 'white',
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.subtleAccent,
+
   },
   itemImage: {
+    height: 84,
+    width: 84,
   },
   itemName: {
+    color: Colors.text,
+    fontWeight: 'bold',
   },
 
 })
