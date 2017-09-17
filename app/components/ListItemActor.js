@@ -22,10 +22,22 @@ const ListItemActor = ({actorName, actorImage}) => (
 
 const Styles = StyleSheet.create({
   listItem: {
+    backgroundColor: 'white',
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.subtleAccent,
+
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingRight: 18,
   },
   itemImage: {
+    height: 84,
+    width: 84,
   },
   itemName: {
+    color: Colors.text,
+    fontWeight: 'bold',
   },
 
 })

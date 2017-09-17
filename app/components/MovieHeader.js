@@ -17,10 +17,14 @@ const MovieHeader = ({movie}) => (
     <Image style={Styles.mainImage} source={movie.image}/>
 
     <View style={Styles.headline}>
-      <Text style={Styles.title}>{movie.name}</Text>
-      <View style={Styles.yearHolder}><Text style={Styles.year}>{movie.year}</Text></View>
-      <Text style={Styles.director}>Directed by</Text>
-      <Text style={Styles.itemName}>{movie.director}</Text>
+      <View style={Styles.mainHead}>
+        <Text style={Styles.title}>{movie.name}</Text>
+        <View style={Styles.yearHolder}><Text style={Styles.year}>{movie.year}</Text></View>
+      </View>
+      <View style={Styles.subHead}>
+        <Text style={Styles.director}>Directed by</Text>
+        <Text style={Styles.itemName}>{movie.director}</Text>
+      </View>
     </View>
   </View>
 
@@ -32,41 +36,61 @@ const windowSize = Dimensions.get('window')
 
 const Styles = StyleSheet.create({
   movieHeader: {
-    //backgroundColor: Colors.background,
+    backgroundColor: Colors.background,
+  },
+  mainHead: {
+    paddingBottom: 9,
+
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  subHead: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'baseline',
+
   },
   mainImage: {
-    //height: 210,
-    //width: undefined
+    height: 210,
+    width: undefined
   },
   headline: {
-    //borderLeftColor: Colors.accent,
-    //borderLeftWidth: 9,
-    //backgroundColor: Colors.backgroundSection,
-    //paddingLeft: 18,
-    //paddingRight: 18,
-    //paddingTop: 9,
-    //paddingBottom: 9,
+    borderLeftColor: Colors.accent,
+    borderLeftWidth: 9,
+    backgroundColor: Colors.backgroundSection,
+    paddingLeft: 18,
+    paddingRight: 18,
+    paddingTop: 9,
+    paddingBottom: 9,
   },
   title: {
-    //fontWeight: 'bold',
-    //fontSize: FontSizes.largeTitle,
+    fontWeight: 'bold',
+    fontSize: FontSizes.largeTitle,
+
+    flex: 1,
   },
   yearHolder: {
-    //height: 48,
-    //width: 48,
-    //borderRadius: 48/2,
-    //backgroundColor: Colors.highlight,
-    //overflow: 'hidden',
+    height: 48,
+    width: 48,
+    borderRadius: 48/2,
+    backgroundColor: Colors.highlight,
+    overflow: 'hidden',
+
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   year: {
-    //color: 'white',
-    //fontWeight: 'bold',
+    color: 'white',
+    fontWeight: 'bold',
   },
   director: {
-    //color: Colors.text,
+    color: Colors.text,
   },
   itemName: {
-    //color: Colors.text,
-    //fontWeight: 'bold',
+    color: Colors.text,
+    fontWeight: 'bold',
+
+    textAlign: 'right',
+    flex: 1,
   },
 })
