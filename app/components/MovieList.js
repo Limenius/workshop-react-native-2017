@@ -18,10 +18,14 @@ export default class MovieList extends Component {
   render() {
     return (
       <View>
-        <MainHeader/>
-        {this.state.movies.map(movie => (
-            <ListItem key={movie.name} name={movie.name} image={movie.image}/>
-        ))}
+        <FlatList
+          data={this.state.movies}
+          ListHeaderComponent={<MainHeader/>}
+          keyExtractor={item => item.name}
+          renderItem={({item}) =>
+            <ListItem name={item.name} image={item.image}/>
+          }
+        />
       </View>
     )
   }

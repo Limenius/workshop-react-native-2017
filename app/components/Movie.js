@@ -17,6 +17,7 @@ export default class Movie extends Component {
   }
 
   render() {
+
     return (
       <View>
         <FlatList
@@ -31,3 +32,4 @@ export default class Movie extends Component {
     )
   }
 }
+
