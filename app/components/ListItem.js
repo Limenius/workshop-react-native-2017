@@ -11,11 +11,11 @@ import {
 import Colors from '../styles/colors'
 import FontSizes from '../styles/fontSizes'
 
-const ListItemActor = ({actorName, actorImage}) => (
+const ListItem = ({name, image}) => (
   <View style={Styles.listItem}>
-    <Image source={actorImage} style={Styles.itemImage}/>
+    <Image source={image} style={Styles.itemImage}/>
     <Text style={Styles.itemName}>
-      {actorName}
+      {name}
     </Text>
   </View>
 )
@@ -42,4 +42,4 @@ const Styles = StyleSheet.create({
 
 })
 
-export default ListItemActor
+export default ListItem

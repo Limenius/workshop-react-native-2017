@@ -11,7 +11,6 @@ const movies = [
             'Harvey Keitel',
             'Bruce Willis',
         ]
-
     },
     {
         image: require('./images/grease.jpg'),
