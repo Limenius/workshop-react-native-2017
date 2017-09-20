@@ -17,7 +17,6 @@ export default class Movie extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      //movie: movies.find((movie) => movie.name === 'Pulp Fiction'),
       movie: movies.find((movie) => movie.name === props.navigation.state.params.name),
       actors: actors,
     }
@@ -35,15 +34,7 @@ export default class Movie extends Component {
           keyExtractor={item => item}
           renderItem={({item}) =>
 
-            <TouchableHighlight
-              underlayColor={Colors.subtleAccent}
-              activeOpacity={0.5}
-              onPress={() => navigate('Actor', {name: item})}
-            >
-              <View>
-                <ListItem name={item} image={this.state.actors[item].image}/>
-              </View>
-            </TouchableHighlight>
+            <ListItem name={item} image={this.state.actors[item].image}/>
           }
         />
       </View>

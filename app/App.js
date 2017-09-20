@@ -16,13 +16,13 @@ const Styles = StyleSheet.create({
 
 const App = StackNavigator({
     Home: { screen: MovieList },
-  //Movie: { screen: Movie },
+    Movie: { screen: Movie },
 
     // Add the Actor screen
 }, {
     navigationOptions: {
-      //headerTintColor: Colors.accent,
-      //headerStyle: Styles.header,
+      headerTintColor: Colors.accent,
+      headerStyle: Styles.header,
     }
 })
 
