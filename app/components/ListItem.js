@@ -13,7 +13,7 @@ import FontSizes from '../styles/fontSizes'
 
 const ListItem = ({name, image}) => (
   <View style={Styles.listItem}>
-    <Image source={image} style={Styles.itemImage}/>
+    <Image source={{uri: 'http://localhost:3000/'+image}} style={Styles.itemImage}/>
     <Text style={Styles.itemName}>
       {name}
     </Text>

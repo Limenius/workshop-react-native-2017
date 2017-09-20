@@ -14,7 +14,7 @@ import FontSizes from '../styles/fontSizes'
 
 const MovieHeader = ({movie}) => (
   <View style={Styles.movieHeader}>
-    <Image style={Styles.mainImage} source={movie.image}/>
+    <Image style={Styles.mainImage} source={{uri: 'http://localhost:3000/' + movie.image}}/>
 
     <View style={Styles.headline}>
       <View style={Styles.mainHead}>

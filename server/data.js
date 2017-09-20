@@ -25,7 +25,7 @@ var movies = [
         ]
     },
     {
-        image: 'gcpractical-magic.jpg',
+        image: 'practical-magic.jpg',
         name: 'Practical Magic',
         year: 1998,
         director: 'Griffin Dunne',
@@ -36,7 +36,7 @@ var movies = [
         ]
     },
     {
-        image: 'gcmoulin-rouge.jpg',
+        image: 'moulin-rouge.jpg',
         name: 'Moulin Rouge!',
         year: 2001,
         director: 'Baz Luhrmann',
@@ -47,7 +47,7 @@ var movies = [
         ]
     },
     {
-        image: 'gcamos-and-andrew.jpg',
+        image: 'amos-and-andrew.jpg',
         name: 'Amos & Andrew',
         year: 1993,
         director: 'E. Max Frye',
@@ -58,7 +58,7 @@ var movies = [
         ]
     },
     {
-        image: 'gcface-off.jpg',
+        image: 'face-off.jpg',
         name: 'Face Off',
         year: 1997,
         director: 'John Woo',
@@ -69,7 +69,7 @@ var movies = [
         ]
     },
     {
-        image: 'gcdemolition-man.jpg',
+        image: 'demolition-man.jpg',
         name: 'Demolition Man',
         year: 1993,
         director: 'Randal Kleiser',
@@ -80,7 +80,7 @@ var movies = [
         ]
     },
     {
-        image: 'gcepisode-1.jpg',
+        image: 'episode-1.jpg',
         name: 'Star Wars: Episode I',
         year: 1999,
         director: 'George Lucas',
@@ -91,7 +91,7 @@ var movies = [
         ]
     },
     {
-        image: 'gcbe-cool.jpg',
+        image: 'be-cool.jpg',
         name: 'Be Cool',
         year: 2005,
         director: 'F. Gary Gray',
@@ -102,7 +102,7 @@ var movies = [
         ]
     },
     {
-        image: 'gctrespass.jpg',
+        image: 'trespass.jpg',
         name: 'Trespass',
         year: 2011,
         director: 'Joel Schumacher',
@@ -116,58 +116,58 @@ var movies = [
 
 const actors = {
     'John Travolta': {
-        image: 'gctravolta.jpg',
+        image: 'travolta.jpg',
     },
     'Uma Thurman': {
-        image: 'gcthurman.jpg',
+        image: 'thurman.jpg',
     },
     'Samuel L. Jackson': {
-        image: 'gcjackson.jpg',
+        image: 'jackson.jpg',
     },
     'Harvey Keitel': {
-        image: 'gckeitel.jpg',
+        image: 'keitel.jpg',
     },
     'Olivia Newton-John': {
-        image: 'gcnewtonjohn.jpg',
+        image: 'newtonjohn.jpg',
     },
     'Stockhard Channing': {
-        image: 'gcchanning.jpg',
+        image: 'channing.jpg',
     },
     'Sandra Bullock': {
-        image: 'gcbullock.jpg',
+        image: 'bullock.jpg',
     },
     'Nicole Kidman': {
-        image: 'gckidman.jpg',
+        image: 'kidman.jpg',
     },
     'Ewan McGregor': {
-        image: 'gcmcgregor.jpg',
+        image: 'mcgregor.jpg',
     },
     'John Leguizamo': {
-        image: 'gcleguizamo.jpg',
+        image: 'leguizamo.jpg',
     },
     'Nicholas Cage': {
-        image: 'gccage.jpg',
+        image: 'cage.jpg',
     },
     'Michael Lerner': {
-        image: 'gclerner.jpg',
+        image: 'lerner.jpg',
     },
     'Dominique Swain': {
-        image: 'gcswain.jpg',
+        image: 'swain.jpg',
     },
     'Sylvester Stallone': {
-        image: 'gcstallone.jpg',
+        image: 'stallone.jpg',
     },
     'Wesley Snipes': {
-        image: 'gcsnipes.jpg',
+        image: 'snipes.jpg',
     },
     'Natalie Portman': {
-        image: 'gcportman.jpg',
+        image: 'portman.jpg',
     },
     'Cam Gigandet': {
-        image: 'gcgigandet.jpg',
+        image: 'gigandet.jpg',
     },
     'Bruce Willis': {
-        image: 'gcwillis.jpg',
+        image: 'willis.jpg',
     },
 }
 

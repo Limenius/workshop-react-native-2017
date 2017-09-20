@@ -13,7 +13,15 @@ app.get('/movies/:name', function (req, res) {
   let movie = movies.find(function (movie) {
     return movie.name === req.params.name
   })
-  res.json(movie);
+  let movieOut = {
+    image: movie.image,
+    name: movie.name,
+    year: movie.year,
+    actors: movie.actors.map((actor) => ({
+      name: actor,
+      image: actors[actor].image
+    }))}
+  res.json(movieOut);
 })
 
 // responds with an actor

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { movies, actors } from '../data'
 import MainHeader from './MainHeader'
 import ListItem from './ListItem'
 import Colors from '../styles/colors'
 
 import {
   View,
+  ActivityIndicator,
   TouchableHighlight,
   FlatList,
 } from 'react-native'
@@ -18,17 +18,43 @@ export default class MovieList extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      movies: movies
+      movies: [],
+      isLoading: true,
     }
+  }
+
+  componentDidMount() {
+    return fetch('http://localhost:3000/movies')
+      .then((response) => response.json())
+      .then((responseJson) => {
+        // Simulate server latency
+        //setTimeout(() => 
+          this.setState({
+            isLoading: false,
+            movies: responseJson,
+          })
+        //  , 5000)
+      })
+      .catch((error) => {
+        console.error(error);
+      })
   }
 
   render() {
     const { navigate } = this.props.navigation
+    const { isLoading, movies } = this.state
 
+    if (isLoading) {
+      return (
+        <View style={{backgroundColor: '#fff', flex: 1, justifyContent: 'center'}}>
+          <ActivityIndicator size='large'/>
+        </View>
+      )
+    }
     return (
       <View>
         <FlatList
-          data={this.state.movies}
+          data={movies}
           ListHeaderComponent={<MainHeader/>}
           keyExtractor={item => item.name}
           renderItem={({item}) =>
