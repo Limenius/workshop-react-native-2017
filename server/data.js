@@ -1,6 +1,6 @@
 var movies = [
     {
-        image: './images/pulp-fiction.jpg',
+        image: 'pulp-fiction.jpg',
         name: 'Pulp Fiction',
         year: 1994,
         director: 'Quentin Tarantino',
@@ -14,7 +14,7 @@ var movies = [
 
     },
     {
-        image: './images/grease.jpg',
+        image: 'grease.jpg',
         name: 'Grease',
         year: 1978,
         director: 'Randal Kleiser',
@@ -25,7 +25,7 @@ var movies = [
         ]
     },
     {
-        image: './images/practical-magic.jpg',
+        image: 'gcpractical-magic.jpg',
         name: 'Practical Magic',
         year: 1998,
         director: 'Griffin Dunne',
@@ -36,7 +36,7 @@ var movies = [
         ]
     },
     {
-        image: './images/moulin-rouge.jpg',
+        image: 'gcmoulin-rouge.jpg',
         name: 'Moulin Rouge!',
         year: 2001,
         director: 'Baz Luhrmann',
@@ -47,7 +47,7 @@ var movies = [
         ]
     },
     {
-        image: './images/amos-and-andrew.jpg',
+        image: 'gcamos-and-andrew.jpg',
         name: 'Amos & Andrew',
         year: 1993,
         director: 'E. Max Frye',
@@ -58,7 +58,7 @@ var movies = [
         ]
     },
     {
-        image: './images/face-off.jpg',
+        image: 'gcface-off.jpg',
         name: 'Face Off',
         year: 1997,
         director: 'John Woo',
@@ -69,7 +69,7 @@ var movies = [
         ]
     },
     {
-        image: './images/demolition-man.jpg',
+        image: 'gcdemolition-man.jpg',
         name: 'Demolition Man',
         year: 1993,
         director: 'Randal Kleiser',
@@ -80,7 +80,7 @@ var movies = [
         ]
     },
     {
-        image: './images/episode-1.jpg',
+        image: 'gcepisode-1.jpg',
         name: 'Star Wars: Episode I',
         year: 1999,
         director: 'George Lucas',
@@ -91,7 +91,7 @@ var movies = [
         ]
     },
     {
-        image: './images/be-cool.jpg',
+        image: 'gcbe-cool.jpg',
         name: 'Be Cool',
         year: 2005,
         director: 'F. Gary Gray',
@@ -102,7 +102,7 @@ var movies = [
         ]
     },
     {
-        image: './images/trespass.jpg',
+        image: 'gctrespass.jpg',
         name: 'Trespass',
         year: 2011,
         director: 'Joel Schumacher',
@@ -116,58 +116,58 @@ var movies = [
 
 const actors = {
     'John Travolta': {
-        image: './images/travolta.jpg',
+        image: 'gctravolta.jpg',
     },
     'Uma Thurman': {
-        image: './images/thurman.jpg',
+        image: 'gcthurman.jpg',
     },
     'Samuel L. Jackson': {
-        image: './images/jackson.jpg',
+        image: 'gcjackson.jpg',
     },
     'Harvey Keitel': {
-        image: './images/keitel.jpg',
+        image: 'gckeitel.jpg',
     },
     'Olivia Newton-John': {
-        image: './images/newtonjohn.jpg',
+        image: 'gcnewtonjohn.jpg',
     },
     'Stockhard Channing': {
-        image: './images/channing.jpg',
+        image: 'gcchanning.jpg',
     },
     'Sandra Bullock': {
-        image: './images/bullock.jpg',
+        image: 'gcbullock.jpg',
     },
     'Nicole Kidman': {
-        image: './images/kidman.jpg',
+        image: 'gckidman.jpg',
     },
     'Ewan McGregor': {
-        image: './images/mcgregor.jpg',
+        image: 'gcmcgregor.jpg',
     },
     'John Leguizamo': {
-        image: './images/leguizamo.jpg',
+        image: 'gcleguizamo.jpg',
     },
     'Nicholas Cage': {
-        image: './images/cage.jpg',
+        image: 'gccage.jpg',
     },
     'Michael Lerner': {
-        image: './images/lerner.jpg',
+        image: 'gclerner.jpg',
     },
     'Dominique Swain': {
-        image: './images/swain.jpg',
+        image: 'gcswain.jpg',
     },
     'Sylvester Stallone': {
-        image: './images/stallone.jpg',
+        image: 'gcstallone.jpg',
     },
     'Wesley Snipes': {
-        image: './images/snipes.jpg',
+        image: 'gcsnipes.jpg',
     },
     'Natalie Portman': {
-        image: './images/portman.jpg',
+        image: 'gcportman.jpg',
     },
     'Cam Gigandet': {
-        image: './images/gigandet.jpg',
+        image: 'gcgigandet.jpg',
     },
     'Bruce Willis': {
-        image: './images/willis.jpg',
+        image: 'gcwillis.jpg',
     },
 }
 
