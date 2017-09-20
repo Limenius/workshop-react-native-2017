@@ -9,6 +9,7 @@ const movies = [
             'Uma Thurman',
             'Samuel L. Jackson',
             'Harvey Keitel',
+            'Bruce Willis',
         ]
 
     },
@@ -164,6 +165,9 @@ const actors = {
     },
     'Cam Gigandet': {
         image: require('./images/gigandet.jpg'),
+    },
+    'Bruce Willis': {
+        image: require('./images/willis.jpg'),
     },
 }
 
