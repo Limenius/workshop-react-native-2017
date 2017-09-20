@@ -30,7 +30,7 @@ app.get('/actors/:name', function (req, res) {
   res.json(actor);
 })
 
-app.use(express.static('images'))
+app.use(express.static('server/images'))
 
 app.listen(3000, function () {
   console.log('Travolta server listening on port 3000')
