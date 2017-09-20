@@ -10,10 +10,11 @@ import {
 
 import Colors from '../styles/colors'
 import FontSizes from '../styles/fontSizes'
+import { baseUrl } from '../constants'
 
 const ListItem = ({name, image}) => (
   <View style={Styles.listItem}>
-    <Image source={{uri: 'http://localhost:3000/'+image}} style={Styles.itemImage}/>
+    <Image source={{uri: baseUrl + '/'+image}} style={Styles.itemImage}/>
     <Text style={Styles.itemName}>
       {name}
     </Text>

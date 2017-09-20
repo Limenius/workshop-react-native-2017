@@ -3,6 +3,7 @@ import { movies, actors } from '../data'
 import MovieHeader from './MovieHeader'
 import ListItem from './ListItem'
 import Colors from '../styles/colors'
+import { baseUrl } from '../constants'
 import {
   View,
   TouchableHighlight,
@@ -25,7 +26,7 @@ export default class Movie extends Component {
   }
 
   componentDidMount() {
-    return fetch('http://localhost:3000/movies/'+this.state.movieName)
+    return fetch(baseUrl + '/movies/' + this.state.movieName)
       .then((response) => response.json())
       .then((responseJson) => {
 

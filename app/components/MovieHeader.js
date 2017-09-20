@@ -11,10 +11,11 @@ import {
 
 import Colors from '../styles/colors'
 import FontSizes from '../styles/fontSizes'
+import { baseUrl } from '../constants'
 
 const MovieHeader = ({movie}) => (
   <View style={Styles.movieHeader}>
-    <Image style={Styles.mainImage} source={{uri: 'http://localhost:3000/' + movie.image}}/>
+    <Image style={Styles.mainImage} source={{uri: baseUrl + '/' + movie.image}}/>
 
     <View style={Styles.headline}>
       <View style={Styles.mainHead}>

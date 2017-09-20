@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import MainHeader from './MainHeader'
 import ListItem from './ListItem'
 import Colors from '../styles/colors'
+import { baseUrl } from '../constants'
 
 import {
   View,
@@ -24,11 +25,11 @@ export default class MovieList extends Component {
   }
 
   componentDidMount() {
-    return fetch('http://localhost:3000/movies')
+    return fetch(baseUrl + '/movies')
       .then((response) => response.json())
       .then((responseJson) => {
         // Simulate server latency
-        //setTimeout(() => 
+        //setTimeout(() =>
           this.setState({
             isLoading: false,
             movies: responseJson,
