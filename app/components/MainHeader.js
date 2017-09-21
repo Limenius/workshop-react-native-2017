@@ -40,8 +40,7 @@ const Styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   logoTitle: {
-    // Uncommenting the next line will throw an error... for now
-    //fontFamily: 'Oleo Script',
+    fontFamily: 'Oleo Script',
 
     fontSize: FontSizes.gigantic,
     color: Colors.background,
@@ -50,6 +49,7 @@ const Styles = StyleSheet.create({
     color: Colors.background,
     fontWeight: '200',
     fontSize: FontSizes.subhead,
+    marginTop: -18,
   },
   logoImage: {
     height: 90,
