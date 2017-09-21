@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import MainHeader from './MainHeader'
 import ListItem from './ListItem'
+import SearchBox from './SearchBox'
 import Colors from '../styles/colors'
 import { baseUrl } from '../constants'
 
@@ -9,6 +10,7 @@ import {
   ActivityIndicator,
   TouchableHighlight,
   FlatList,
+  TextInput,
 } from 'react-native'
 
 export default class MovieList extends Component {
@@ -20,30 +22,41 @@ export default class MovieList extends Component {
     super(props)
     this.state = {
       movies: [],
+      moviesList: [],
       isLoading: true,
+      searchText: '',
     }
+
+    //this.setSearchText = this.setSearchText.bind(this)
+
   }
 
   componentDidMount() {
     return fetch(baseUrl + '/movies')
       .then((response) => response.json())
       .then((responseJson) => {
-        // Simulate server latency
-        //setTimeout(() =>
-          this.setState({
-            isLoading: false,
-            movies: responseJson,
-          })
-        //  , 5000)
+        this.setState({
+          isLoading: false,
+          movies: responseJson,
+          moviesList: responseJson,
+        })
       })
       .catch((error) => {
         console.error(error);
       })
   }
 
+  //setSearchText(text) {
+  //  const regex = new RegExp(text, "gi")
+  //  this.setState({
+  //    searchText: text,
+  //    moviesList: this.state.movies.filter(movie => movie.name.match(regex)),
+  //  })
+  //}
+
   render() {
     const { navigate } = this.props.navigation
-    const { isLoading, movies } = this.state
+    const { isLoading, } = this.state
 
     if (isLoading) {
       return (
@@ -53,9 +66,14 @@ export default class MovieList extends Component {
       )
     }
     return (
-      <View>
+      <View style={{flex: 1}}>
+        {/*<SearchBox
+          value={this.state.searchText}
+          onChangeText={this.setSearchText}
+        />*/}
         <FlatList
-          data={movies}
+          style={{flex: 1}}
+          data={this.state.movies/*List*/}
           ListHeaderComponent={<MainHeader/>}
           keyExtractor={item => item.name}
           renderItem={({item}) =>
