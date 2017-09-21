@@ -14,6 +14,7 @@ const SearchBox = ({value, onChangeText}) => (
       style={Styles.input}
       value={value.searchText}
       onChangeText={onChangeText}
+      placeholder="Search"
     />
   </View>
 )
